@@ -1,0 +1,409 @@
+   ./crkit/bin/crlAdaptiveThreshold1  [-s] [-c] [-b <number of bins>] -o
+                                      <output image> [--] [--version] [-h]
+                                      <input image> <mean fraction>
+                                      <histogram fraction>
+   ./crkit/bin/crlAffineMIRegistration2d  [-t <transform initialization
+                                        scheme (uint : 0 moments, 1
+                                        geometrical center,2 identity
+                                        transform)>] [--PowellStepTolerance
+                                        <floating point number>]
+                                        [--PowellStepLength <floating point
+                                        number>] [-i <unsigned integer>]
+                                        [-p <unsigned integer>] [-s
+                                        <unsigned integer>] [-b <unsigned
+                                        integer>] [--] [--version] [-h]
+                                        <fixed image file name> <moving
+                                        image file name> <output image file
+                                        name> <transform file name>
+                                        <optional transform file name>
+   ./crkit/bin/crlAffineNormalizedCorrelationRegStepRegistration2d  [-t
+                                        <transform initialization scheme
+                                        (uint : 0 moments, 1 geometrical
+                                        center,2 identity transform)>]
+                                        [--PowellStepTolerance <floating
+                                        point number>] [--PowellStepLength
+                                        <floating point number>] [-i
+                                        <unsigned integer>] [-p <unsigned
+                                        integer>] [-s <unsigned integer>]
+                                        [-b <unsigned integer>] [--]
+                                        [--version] [-h] <fixed image file
+                                        name> <moving image file name>
+                                        <output image file name> <transform
+                                        file name> <optional transform file
+                                        name>
+   ./crkit/bin/crlAffineNormalizedCorrelationRegistration2d  [-t <transform
+                                        initialization scheme (uint : 0
+                                        moments, 1 geometrical center,2
+                                        identity transform)>]
+                                        [--PowellStepTolerance <floating
+                                        point number>] [--PowellStepLength
+                                        <floating point number>] [-i
+                                        <unsigned integer>] [-p <unsigned
+                                        integer>] [-s <unsigned integer>]
+                                        [-b <unsigned integer>] [--]
+                                        [--version] [-h] <fixed image file
+                                        name> <moving image file name>
+                                        <output image file name> <transform
+                                        file name> <optional transform file
+                                        name>
+   ./crkit/bin/crlAffineRegistration  [--metricName <name of metric
+                                      (string: one of mi, normmi,
+                                      meansquares, normcorr,
+                                      matchcardinality)>]
+                                      [--movingImageMask <Mask filename>]
+                                      [--fixedImageMask <Mask filename>]
+                                      [-t <floating point number>] [-l
+                                      <floating point number>]
+                                      [--writePyramidToDisk <write pyramid
+                                      to disk (bool)>] [-i <unsigned
+                                      integer>] [-p <unsigned integer>] [-s
+                                      <unsigned integer>] [-b <unsigned
+                                      integer>] [--] [--version] [-h]
+                                      <fixed image file name> <moving image
+                                      file name> <output image file name>
+                                      <transform file name> <optional
+                                      initial transform file name>
+Usage: crlAnisotropicDiffusion inimage iterations conductance outimage
+Usage: crlApplyVectorAtlas weights.nrrd atlas.nrrd lambda output.nrrd
+
+ lambda is a weight for the atlas between 0.0 (not applied) to 1.0 (strong)
+ WE RENORMALIZE TO 1.0 and set element 0 to 1 if ALL elements are zero.
+Usage: ./crkit/bin/crlBinaryMorphology inputFileName operation foregroundValue seRadius outputFileName 
+Usage: binarythreshold inimage outimage lowthreshold hithreshold invalue outvalue
+values equal to and between the thresholds are set to invalue
+values outside the thresholds are set to outvalue
+   ./crkit/bin/crlCannyEdgeDetection  [-a <slice axis>] [--] [--version]
+                                      [-h] <input image> <output image>
+                                      <[variance maxerror [lthresh
+                                      uthresh]]> ...
+Usage: castsymmattofloat inimage outimage 
+This purpose of this program is to take a 3D second order symmetric tensor with components stored as double and modify it to have the components stored with a precision of float.
+Usage: crlCastSymMatFloatFromColumnToRowMajorOrder inimage outimage 
+This purpose of this program is to take a 3D second order symmetric tensor with components stored as float in column major order and to modify it to have the components stored in row major order.
+Usage: crlCastSymMatFloatToAnima inimage outimage 
+This purpose of this program is to take a 3D second order symmetric tensor with components stored as float in ITK format and write it out in Anima format.
+Usage: castsymmattodouble inimage outimage 
+This purpose of this program is to take a 3D second order symmetric tensor with components stored as float and modify it to have the components stored with a precision of double.
+Usage: ./crkit/bin/crlCastVectorSixToFloatSymMat inimage outimage 
+This purpose of this program is to take a 3D second order symmetric tensor with components stored as float  in a vector, and modify it to have the components stored in a symmetric matrix file type.
+   ./crkit/bin/crlChangeFormat  [-p <input image pathname>] [-s] [-C] [--]
+                                [--version] [-h] <input filename> <output
+                                filename>
+Usage: crlChangeFormat inimage outimage --setCompressionOn 
+Usage: changeformat inimage outimage --setCompressionOn 
+   ./crkit/bin/crlChangeFormatDicomSeries  [-i <boolean indicator>] [--]
+                                        [--version] [-h] <directory name>
+                                        <file name> <series name>
+   ./crkit/bin/crlChangeImageInformation  -i <Input image file name> [-r
+                                        <Reference image file name>] [-x]
+                                        [-s] [-d] [-c] -o <Output image
+                                        file name> [--] [--version] [-h]
+   ./crkit/bin/crlChangeSpaceDirections  -i <Input image file name> [-r
+                                        <Reference image file name>] [-x]
+                                        [-s] [-d] [-c] -o <Output image
+                                        file name> [--] [--version] [-h]
+Usage: crlConnectedComponentFilter inimage outimage minsize
+Usage: crlConnectedComponentFilter inimage outimage minsize
+Usage: ./crkit/bin/crlConstructVectorImage [-n] component1FileName [component2FileName] [componentNFileName] [...] outputVectorFileName
+if -n is the FIRST argument, will normalize each vector to [0,1]
+Usage: ./crkit/bin/crlConstructVectorImage2d component1FileName [component2FileName] [componentNFileName] [...] outputVectorFileName
+   ./crkit/bin/crlContinuousSTAPLE  [-p <number of threads>] [-i <number of
+                                    iterations>] [-t <stopping criterion>]
+                                    [-v <initial variance>] [-b <initial
+                                    bias>] [-G] [-O <result matlab file>]
+                                    [-r <computation mask output>] [-m
+                                    <computation mask>] -o <result image>
+                                    -l <image list> [--] [--version] [-h]
+Usage:
+	castconvert inputfilename outputfilename [outputPixelComponentType]
+	castconvert dicomDirectory outputfilename [outputPixelComponentType]
+	where outputPixelComponentType is one of:
+		- unsigned_char
+		- char
+		- unsigned_short
+		- short
+		- unsigned_int
+		- int
+		- unsigned_long
+		- long
+		- float
+		- double
+	provided that the outputPixelComponentType is supported by the output file format.
+	By default the outputPixelComponentType is set to the inputPixelComponentType.
+   ./crkit/bin/crlConvertDICOMMOSAIC  [-r <Use Tag ID group|element to
+                                      restrict file names - can be used
+                                      more than once on the command line to
+                                      add further restrictions. Ex : -r
+                                      "0020|0012">] ...  [-e <Boolean
+                                      indicator>] [-f <Boolean indicator>]
+                                      [-c <Boolean indicator>] [-o <Boolean
+                                      indicator>] [-n <DICOM series
+                                      identifier string>] [-s <file name
+                                      extension>] [-p <file name>] -d <file
+                                      name> [--] [--version] [-h]
+Usage: ./crkit/bin/crlConvertImageToVectorImage inimage outimage
+Convert 4 dimensional image to a vector image.
+Usage: ./crkit/bin/crlConvertVectorImageToImage inimage outimage
+Convert vector image to 4 dimensional image.
+Usage: ./crkit/bin/crlConvertVectorImageToImage2d3d inimage outimage
+Convert vector image to 4 dimensional image.
+   ./crkit/bin/crlCopyImageWithGeometry  -o <output image> [-N] [-z] [-S]
+                                        [-O] [-D] [--] [--version] [-h]
+                                        <input image> <geometry image>
+Usage: crlCorrelator targetImageName movingImageName scoreImageName
+Compute SSD between the two images under all possible translations.
+   ./crkit/bin/crlCreateLogOddsVectorAtlasFromTemplate  [-r <smoothing
+                                        value>] -o <output file name> [--]
+                                        [--version] [-h] <input file name>
+Usage: ./crkit/bin/crlDeformScalarImage inputImageFile inputDeformationField outputImageFile ?nearest|linear|spline|sinc?
+   ./crkit/bin/crlDensityWeightedStats  [--] [--version] [-h] <density
+                                        image file name> <scalar image file
+                                        name>
+   ./crkit/bin/crlDetectOutlier  [-p <number of threads>] [-z <block half
+                                 size Z>] [-y <block half size Y>] [-x
+                                 <block half size X>] -o <result image> [-m
+                                 <Mask Image>] -T <target image> -L
+                                 <Segmentation Image> [--] [--version]
+                                 [-h]
+   ./crkit/bin/crlDetectVectorOutlier  [-p <number of threads>] [-z <block
+                                       half size Z>] [-y <block half size
+                                       Y>] [-x <block half size X>] -o
+                                       <result image> [-m <Mask Image>] -T
+                                       <target image> -L <Segmentation
+                                       Image> [--] [--version] [-h]
+   ./crkit/bin/crlDistanceMapFromICC  -o <ouput image name> [--]
+                                      [--version] [-h] <icc input image
+                                      name>
+   ./crkit/bin/crlExportDICOM  [-o] [-p <MRN prefix>] [-d <series
+                               description>] [--] [--version] [-h] <input
+                               file name> <output prefix> <data template>
+   ./crkit/bin/crlExtract2DImageFrom3DImage  -a <integer value of axis to
+                                        extract from> -l <integer value of
+                                        lowest component index> -m <integer
+                                        value of highest component index>
+                                        -i <Input image file name> -o
+                                        <Output image file name> [--]
+                                        [--version] [-h]
+   ./crkit/bin/crlExtract3DImageFrom4DImage  -a <integer value of axis to
+                                        extract from> -l <integer value of
+                                        lowest component index> -m <integer
+                                        value of highest component index>
+                                        -i <Input image file name> -o
+                                        <Output image file name> [--]
+                                        [--version] [-h]
+Usage: ./crkit/bin/crlExtractFromVectorImage inimage outimage index
+Extract component 'index' from vector image.
+   ./crkit/bin/crlExtractSmallerImageFromImage  [-a <integer value of axis
+                                        to extract from>] -l <integer value
+                                        of lowest component index> -m
+                                        <integer value of highest component
+                                        index> -i <Input image file name>
+                                        -o <Output image file name> [--]
+                                        [--version] [-h]
+   ./crkit/bin/crlFuseRGBImages  [--] [--version] [-h] <input filename 1>
+                                 <input filename 2> <output filename>
+                                 <opacity>
+   ./crkit/bin/crlGESlicesToVolume  [--] [--version] [-h] <input filename>
+                                    <output filename>
+Usage: ./crkit/bin/crlGenerateMapFileFromSegmentation imageFile segmentationFile mapFile [label]
+   ./crkit/bin/crlGradientAnisotropicDiffusion  [-T <num threads>] [-t
+                                        <timestep>] [-i <iterations>] [-c
+                                        <conductance>] -o <output image>
+                                        [--] [--version] [-h] <input
+                                        image>
+Usage: ./crkit/bin/crlHausdorffDistance imageFile1 imageFile2 [percentage [percentage] [...]]
+   ./crkit/bin/crlIdentityMeasurementFrame  [--] [--version] [-h] <input
+                                        DWI image file> <output DWI image
+                                        file>
+   ./crkit/bin/crlIdentityMeasurementFrameFullProcessing  [--] [--version]
+                                        [-h] <input DWI image file> <output
+                                        DWI image file>
+Usage: crlImageAddMpyAdd inmage add1 mult1 add2 outimage
+Forms voxelwise outimage = (inimage + add1)*mult1 + add2
+Usage: imageaddmpyadd inmage add1 mult1 add2 outimage
+Forms voxelwise outimage = (inimage + add1)*mult1 + add2
+Usage: imageaddmpyadd inmage add1 mult1 add2 outimage
+Forms voxelwise outimage = (inimage + add1)*mult1 + add2
+Usage: ./crkit/bin/crlImageAddMultiplyAdd inmage add1 multiply add2 outimage
+Calculates voxelwise outimage = (inimage + add1)*mult1 + add2
+Usage: ./crkit/bin/crlImageAlgebra image1 operator image2 outimage
+Computes : outimage = image1 operator image2 
+Valid operators are : add subtract multiply divide difference squareddifference 
+   ./crkit/bin/crlImageInfo  [-s] [--] [--version] [-h] <Image File
+                             location> ...
+Usage: ./crkit/bin/crlImageLaplace labelimage innerlabel outerlabel solveregionlabel outputLaplaceImage outputTangentField thicknessImageFileName displacementFieldFileName  lagrangianL0FileName lagrangianL1FileName  solveOneLayer
+Usage: crlImageStats inimage [inimage2] ...
+Usage: crlImageStats inimage
+Usage: crlImageStats inimage
+   ./crkit/bin/crlImageStatsLabelled  [-t <Tolerance level>] [--maxlabel
+                                      <max label>] [--minlabel <min label>]
+                                      [--histub <hist ubound>] [--histlb
+                                      <hist lbound>] -l <label image> -i
+                                      <input image> [--] [--version] [-h]
+Usage: ./crkit/bin/crlIndexOfMaxComponent inimage outimage 
+Create a new image where each voxel has the value of the index of the component with the largest value.
+Usage: ./crkit/bin/crlIndexOfMaxComponent3d inimage outimage 
+Create a new image where each voxel has the value of the index of the component with the largest value.
+Usage: ./crkit/bin/crlIndexOfMaxComponent4d inimage outimage 
+Create a new image where each voxel has the value of the index of the component with the largest value.
+Usage: ./crkit/bin/crlIndexOfMaxComponentVector inimage outimage 
+Create a new image where each voxel has the value of the index of the component with the largest value.
+Usage: ./crkit/bin/crlMakeAverage image1FileName [image2FileName] [...] [imageNFileName] outputImageFileName
+Usage: ./crkit/bin/crlMaskImage inputFileName maskFileName outputFileName [outsideValue]
+   ./crkit/bin/crlMultipleMaskImage  [-b <background>] -o <output image>
+                                     [--] [--version] [-h] <input image>
+                                     <mask image> <classes> ...
+   ./crkit/bin/crlMultipleOtsuMaskMaker  [-b <number of bins>] -o <output
+                                        image> [--] [--version] [-h] <input
+                                        image> <num threshes>
+Usage: crlMultiplyVectorImage input1.nrrd input2.nrrd output.nrrd
+Usage: crlN4BiasFieldCorrection inimage outimage
+   ./crkit/bin/crlNonrigidBSplinePyramid2  [-n] [-M] [-m <fixed mask
+                                        image>] [-t <initial affine
+                                        transform>] [-r <relaxation
+                                        factor>] [-l <min steplength>] [-u
+                                        <max steplength>] [-c <control
+                                        points>] [-i <iterations>] [-s
+                                        <samples>] [-b <bins>] [-p <pyramid
+                                        levels>] [--] [--version] [-h]
+                                        <fixed image> <moving image>
+                                        <output image> <output transform>
+                                        <output deform field>
+   ./crkit/bin/crlNormalizeImageFilter  [-v <double precision floating
+                                        point number>] [-m <double
+                                        precision floating point number>]
+                                        [--] [--version] [-h] <input image
+                                        file name as string> <output image
+                                        file name as string>
+Usage: ./crkit/bin/crlOrderKVoronoiDiagram mapfile maxch0 maxch1 maxch2 k outProbabilityTable
+Usage: crlProbeVoxelsLabelled inimage labelimage labelvalue
+Report the values of all of the voxel corresponding to the label value in the labelimage.
+Usage: ./crkit/bin/crlRelabelTrainingData inmapfile outmapfile inlabel outlabel
+   ./crkit/bin/crlResampleToIsotropic  [-x <double floating point value of
+                                       the desired x axis spacing.>] [-y
+                                       <double floating point value of the
+                                       desired y axis spacing.>] [-z
+                                       <double floating point value of the
+                                       desired z axis spacing.>] [--]
+                                       [--version] [-h] <input image file>
+                                       <interpolation style> <output image
+                                       file>
+   ./crkit/bin/crlResampler  [-a <image providing origin (string file
+                             name)>] [-c] [--] [--version] [-h] <input
+                             image file> <input transform file> <output
+                             geometry example file> <interpolation style>
+                             <output image file>
+   ./crkit/bin/crlResampler2d  [-a <image providing origin (string file
+                               name)>] [-c] [--] [--version] [-h] <input
+                               image file> <input transform file> <output
+                               geometry example file> <interpolation style>
+                               <output image file>
+   ./crkit/bin/crlRigidMIExhaustiveSearchRegistration  [-i <filename
+                                        (string)>] [-t <transform
+                                        initialization scheme (uint : 0,1,2
+                                        ,3)>] [-p <pyramid levels (uint)>]
+                                        [-s <samples (uint)>] [-b <bins
+                                        (uint)>] [--] [--version] [-h]
+                                        <fixed image file name> <moving
+                                        image file name> <output image file
+                                        name> <transform file name>
+   ./crkit/bin/crlRigidMIRegistration2d  [-t <transform initialization
+                                        scheme (uint : 0,1,2,3)>] [-n <min
+                                        step (float)>] [-m <max step
+                                        (float)>] [-i <iterations (uint)>]
+                                        [-p <pyramid levels (uint)>] [-s
+                                        <samples (uint)>] [-b <bins
+                                        (uint)>] [--] [--version] [-h]
+                                        <fixed image file name> <moving
+                                        image file name> <output image file
+                                        name> <transform file name>
+   ./crkit/bin/crlRigidNormalizedCorrelationRegistration2d  [-t <transform
+                                        initialzation scheme (uint : 0,1,2
+                                        ,3)>] [-n <min step (float)>] [-m
+                                        <max step (float)>] [-i <iterations
+                                        (uint)>] [-p <pyramid levels
+                                        (uint)>] [-s <samples (uint)>] [-b
+                                        <bins (uint)>] [--] [--version]
+                                        [-h] <fixed image file name>
+                                        <moving image file name> <output
+                                        image file name> <transform file
+                                        name>
+   ./crkit/bin/crlRigidNormalizedMIRegistration2d  [-t <transform
+                                        initialzation scheme (uint : 0,1,2
+                                        ,3)>] [-n <min step (float)>] [-m
+                                        <max step (float)>] [-i <iterations
+                                        (uint)>] [-p <pyramid levels
+                                        (uint)>] [-s <samples (uint)>] [-b
+                                        <bins (uint)>] [--] [--version]
+                                        [-h] <fixed image file name>
+                                        <moving image file name> <output
+                                        image file name> <transform file
+                                        name>
+   ./crkit/bin/crlRigidRegistration  [-t <transform initialization scheme
+                                     (uint : 0 moments translation only, 1
+                                     geometrical center,2 identity
+                                     transform, 3 moments translation and
+                                     rotation)>] [-l <initial transform
+                                     file name>] [--movingImageMask <Mask
+                                     filename>] [--fixedImageMask <Mask
+                                     filename>] [-n <min step (float)>] [-m
+                                     <max step (float)>]
+                                     [--writePyramidToDisk <write pyramid
+                                     to disk (bool)>] [-i <iterations
+                                     (uint)>] [-p <pyramid levels (uint)>]
+                                     [-s <samples (uint)>] [-b <bins
+                                     (uint)>] [--metricName <name of metric
+                                     (string: one of mi, normmi,
+                                     meansquares, normcorr)>] [--]
+                                     [--version] [-h] <fixed image file
+                                     name> <moving image file name> <output
+                                     image file name> <transform file
+                                     name>
+Usage: crlRootMeanSquare image1 image2
+   ./crkit/bin/crlScalarResampler  [-a <image providing origin (string file
+                                   name)>] [-s <determine order of spline
+                                   (cubic = 3 nn = 0 linear = 1 quadratic =
+                                   2)>] [-c] [--] [--version] [-h] <input
+                                   image file> <input transform file>
+                                   <output geometry example file>
+                                   <interpolation style> <output image
+                                   file>
+   ./crkit/bin/crlSimilarityMIRegistration  [-t <floating point number>]
+                                        [-l <floating point number>] [-i
+                                        <unsigned integer>] [-p <unsigned
+                                        integer>] [-s <unsigned integer>]
+                                        [-b <unsigned integer>] [--]
+                                        [--version] [-h] <fixed image file
+                                        name> <moving image file name>
+                                        <output image file name> <transform
+                                        file name> <optional transform file
+                                        name>
+Usage: ./crkit/bin/crlSpectralSpatialSegmentation mapfile weights seg ?distvolName? ?indexvolFileName? 
+   ./crkit/bin/crlSquarifyImage  [--] [--version] [-h] <input filename>
+                                 <output filename>
+Usage: ./crkit/bin/crlSulciDetection labelimage innerlabel outerlabel solveregionlabel numIniticalCortialLayers excludeSulci checkTopology expandSulci  maxIterations outputSegmentation outputLaplaceImage outputTangentField thicknessImageFileName displacementFieldFileName 
+Usage: ./crkit/bin/crlTableLookup table data weights
+   ./crkit/bin/crlTissueVolumes  [-l <string>] [--] [--version] [-h]
+                                 <string> ...
+usage: ./crkit/bin/crlTrainingDataResampleImages inmapfile outmapfile image1 [image2...]
+  uses coordinates from inmapfile to sample data from image1,2,...
+  and writes on a N-dimensional map file to outmapfile.
+  All images must have the same dimensionality. 
+  Will also handle a *single* 4D image and will treat as a list of 3D images. 
+   ./crkit/bin/crlTransformDWIData  [--] [--version] [-h] <input DWI image
+                                    file> <input transform file> <output
+                                    geometry example file> <interpolation
+                                    style> <output DWI image file>
+   ./crkit/bin/crlTransformMomentsInitialization  [--] [--version] [-h]
+                                        <fixed image file name> <moving
+                                        image file name> <transform file
+                                        name>
+   ./crkit/bin/crlUnSquarifyImage  [--] [--version] [-h] <input filename>
+                                   <number voxels> <number voxels> <output
+                                   filename>
+   ./crkit/bin/crlVectorImageNorm  [-t <L2|Linf>] [--] [--version] [-h]
+                                   <input image> <output image>
+   ./crkit/bin/crlVolumeToSlices  [--] [--version] [-h] <input file name>
+                                  <output file prefix> <output file
+                                  extension>
+Usage: ./crkit/bin/crlZeroImage outputFileName dimensionality startx starty startz numx numy numz spacingx spacingy spacingz originx originy originz [value]

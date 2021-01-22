@@ -1,0 +1,14 @@
+prefix=/opt/el7/pkgs/itk/itk-v4.13.3
+bindir=${prefix}/bin
+mandir=${prefix}/
+docdir=${prefix}/
+libdir=${prefix}/lib
+includedir=${prefix}/include/ITK-4.13/gdcmopenjpeg
+
+Name: openjp2
+Description: JPEG2000 library (Part 1 and 2)
+URL: http://www.openjpeg.org/
+Version: 2.1.1
+Libs: -L${libdir} -lopenjp2
+Libs.private: -lm
+Cflags: -I${includedir}

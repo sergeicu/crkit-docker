@@ -1,0 +1,71 @@
+      SUMMARY OF THE HDF5 CONFIGURATION
+      =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.8.17
+                  Configured on: 
+                  Configured by: Unix Makefiles
+                 Configure mode: CMAKE 3.18.5
+                    Host system: Linux-3.10.0-693.21.1.el7.x86_64
+              Uname information: Linux
+                       Byte sex: little-endian
+                      Libraries: 
+             Installation point: /opt/el7/pkgs/itk/itk-v4.13.3
+
+Compiling Options:
+------------------
+               Compilation Mode: Release
+                     C Compiler: /opt/rh/devtoolset-8/root/usr/bin/gcc
+                         CFLAGS:    -Wno-uninitialized -Wno-unused-parameter -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow  -w -std=c99 -fstdarg-opt -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Winline -fmessage-length=0
+                      H5_CFLAGS: 
+                      AM_CFLAGS: 
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: 
+                    AM_CPPFLAGS: 
+               Shared C Library: YES
+               Static C Library: YES
+  Statically Linked Executables: OFF
+                        LDFLAGS: -fuse-ld=gold  
+                     AM_LDFLAGS: 
+                Extra libraries: m;dl;itkzlib
+                       Archiver: /opt/rh/devtoolset-8/root/usr/bin/ar
+                         Ranlib: /opt/rh/devtoolset-8/root/usr/bin/ranlib
+              Debugged Packages: 
+                    API Tracing: OFF
+
+Languages:
+----------
+                        Fortran: 
+               Fortran Compiler: 
+          Fortran 2003 Compiler: 
+                  Fortran Flags: 
+               H5 Fortran Flags: 
+               AM Fortran Flags: 
+         Shared Fortran Library: YES
+         Static Fortran Library: YES
+
+                            C++: ON
+                   C++ Compiler: /opt/rh/devtoolset-8/root/usr/bin/g++
+                      C++ Flags:    -Wall -Wcast-align -Wdisabled-optimization -Wextra -Wformat=2 -Winvalid-pch -Wno-format-nonliteral -Wpointer-arith -Wshadow -Wunused -Wwrite-strings -funit-at-a-time -Wno-strict-overflow -Wno-deprecated -Wno-invalid-offsetof -Woverloaded-virtual -Wstrict-null-sentinel  -msse2 -w -fstdarg-opt -fmessage-length=0
+                   H5 C++ Flags: 
+                   AM C++ Flags: 
+             Shared C++ Library: YES
+             Static C++ Library: YES
+
+Features:
+---------
+                  Parallel HDF5: OFF
+             High Level library: OFF
+                   Threadsafety: OFF
+            Default API Mapping: v18
+ With Deprecated Public Symbols: ON
+         I/O filters (external):  DEFLATE
+                            MPE: 
+                     Direct VFD: 1
+                        dmalloc: 
+Clear file buffers before write: ON
+           Using memory checker: OFF
+         Function Stack Tracing: OFF
+      Strict File Format Checks: OFF
+   Optimization Instrumentation: OFF

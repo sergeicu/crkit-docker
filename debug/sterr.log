@@ -1,0 +1,608 @@
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlAdaptiveThreshold1 --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlAffineMIRegistration2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlAffineNormalizedCorrelationRegStepRegistration2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlAffineNormalizedCorrelationRegistration2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlAffineRegistration --help
+
+Usage: 
+./crkit/bin/crlAnyTransformToAffineTransform inputTransformFile 
+ outputTransformFile  ?inverse?
+If a third argument is specified, the inverse transform will be computed.
+Usage: 
+./crkit/bin/crlAnyTransformToAffineTransform2d inputTransformFile 
+ outputTransformFile  ?inverse?
+If a third argument is specified, the inverse transform will be computed.
+./crkit/bin/crlApplyFunctionToImage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: crlatlassample vatlas.nrrd distance[+limit] output-mapfile target_nvoxels labels
+ channel1.nrrd [channel2.nrrd...]
+Takes a multi-component atlas (probability) volume and writes out a map file
+with random samples generated from the channel volumes for each
+label in the atlas.
+
+target_nvoxels is a desired number of samples from each class
+labels is either the word 'all' (no quotes) or a quoted list of labels
+distance is the distance from class boundaries (ML) in the atlas to stay away from and, optionally, 
+ limit states how far beyond that distance to go FOR CLASS 0 only!
+HEY!!!!!!!!!!!!!!! READ THIS---> only works for two class 0 and non-zero right now
+also, it's possible for this to hang if there aren't enough of a given class to sample
+./crkit/bin/crlBlockMatchingRegistration: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: 
+./crkit/bin/crlBoundingBox inputImageFile  label
+./crkit/bin/crlCBV: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlCannyEdgeDetection --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlChangeFormat --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlChangeFormatDicomSeries --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlChangeImageInformation --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlChangeSpaceDirections --help
+
+Missing Parameters 
+Usage: ./crkit/bin/crlCheckerBoard image1File image2File  outputImagefile [numchecks (def: 4)]
+Usage: 
+./crkit/bin/crlComposeAffineTransforms inputTransformFile1 inputTransformFile2 outputTransformFile
+Usage: 
+./crkit/bin/crlComposeAffineTransforms2d inputTransformFile1 inputTransformFile2 outputTransformFile
+./crkit/bin/crlCompress: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlContinuousSTAPLE --help
+
+Usage: 
+./crkit/bin/crlConvertAffine2DToAffine3D inputTransformFile outputTransformFile
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlConvertDICOMMOSAIC --help
+
+./crkit/bin/crlConvertN3DTo4D: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlCopyImageWithGeometry --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlCreateLogOddsVectorAtlasFromTemplate --help
+
+./crkit/bin/crlCreateNullImageFromImage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlCropImage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIAverage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCICompartmentalize: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCICountFascicles: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIEstimate: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIExtractConnectivity: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIExtractParameterAlongStreamline: error while loading shared libraries: libvtkCommonDataModel-8.2.so.1: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIExtractParameterMap: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIGeneratePriorModel: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIParameterResample: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDCIToPeaks: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDICOMConverter: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: ./crkit/bin/crlDICOMPrintPatientInfo DicomFile [tag]*
+Usage: ./crkit/bin/crlDICOMSeriesTags DicomDirectory 
+Usage: ./crkit/bin/crlDICOMUpdateTagValue DicomImage OutputDicomImage Entry Value [Entry Value]*
+./crkit/bin/crlDWICombineAcquisitions: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIConvertFSLToNHDR: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIConvertNHDRForFSL: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIConvertNHDRForMedINRIA: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIHighRes: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIMotionCorrection: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIRemoveGradientImage: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIRobustB0: error while loading shared libraries: libcrlDWICommon.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDWIToDTIEstimator: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlDeformTensorImage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Missing Parameters 
+Usage: ./crkit/bin/crlDemonsReg2d fixedImageFile movingImageFile  outputImageFile 
+ [outputDeformationFieldFile] 
+Missing Parameters 
+Usage: ./crkit/bin/crlDemonsReg3d fixedImageFile movingImageFile  numberOfIterations standardDeviation  outputImageFile 
+ [outputDeformationFieldFile] 
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlDensityWeightedStats --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlDetectOutlier --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlDetectVectorOutlier --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlDistanceMapFromICC --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlExportDICOM --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlExtract2DImageFrom3DImage --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlExtract3DImageFrom4DImage --help
+
+Usage: 
+./crkit/bin/crlExtractROI inputImageFile  outputImageFile 
+ startX startY startZ sizeX sizeY sizeZ
+Usage: 
+./crkit/bin/crlExtractROI2d inputImageFile  outputImageFile 
+ startX startY sizeX sizeY 
+Usage: 
+./crkit/bin/crlExtractROIRGB2d inputImageFile  outputImageFile 
+ startX startY sizeX sizeY 
+Usage: 
+./crkit/bin/crlExtractROItensor inputImageFile  outputImageFile 
+ startX startY startZ sizeX sizeY sizeZ
+./crkit/bin/crlExtractRegion: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlExtractSmallerImageFromImage --help
+
+Missing parameters. 
+Usage: 
+./crkit/bin/crlFixSliceMeans inputImageFile axisDir1 axisDir2 [maskImageFile] ouptutImageFile
+
+axisDir1 and axisDir2 are usually between 0 and 2 (for a 3D image)
+and define the axes WITHIN a slice.
+For now, if a mask image is not offered, then flat 0.0 is the background 
+and the image is assumed to have been previously masked.
+Note that the output is always LAST
+Usage: 
+./crkit/bin/crlFlipImageFilter inputImageFile outputImageFile flipAxisX flipAxisY flipAxisZ
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlFuseRGBImages --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlGESlicesToVolume --help
+
+Usage: 
+./crkit/bin/crlGaussianSmooth  inputImageFile outputImageFile sigma [clamp-lo clamp-hi]
+./crkit/bin/crlGenerateMaskFromInputImages: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlGradientAnisotropicDiffusion --help
+
+Usage: 
+./crkit/bin/crlIdentityAffineTransform outputTransformFile ?dimensionality?
+
+Write out an identity transform.  Useful for in-place resampling of images to a new geometry.
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlIdentityMeasurementFrame --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlIdentityMeasurementFrameFullProcessing --help
+
+Usage: 
+./crkit/bin/crlImageCircle  infile radius outputImageFile 
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlImageInfo --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlImageStatsLabelled --help
+
+Usage: 
+./crkit/bin/crlInsertROI inputOutputImage roiImage startx starty startz
+Copies the entire image roiImage over a region of the first image.
+Usage: 
+./crkit/bin/crlInvertAffineTransform inputAffineTransformFile outputAffineTransformFile
+usage: ./crkit/bin/crlInvertDeformationField inputImage outputImage
+./crkit/bin/crlLOPSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlLocalLOPSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlLocalProbabilisticSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+usage: ./crkit/bin/crlLogEuclideanScaleAffineTransform input-transform.trsf scale output-transform.trsf
+         scale an affine transform in Log-Euclidean space.
+         0.5 as a scalefactor is the L.E. half-way point
+         or the square root A^(0.5) of the matrix.
+./crkit/bin/crlMFMTensorResample: error while loading shared libraries: libvtkCommonDataModel-8.2.so.1: cannot open shared object file: No such file or directory
+./crkit/bin/crlMFMTractGenerator: error while loading shared libraries: libvtkCommonDataModel-8.2.so.1: cannot open shared object file: No such file or directory
+./crkit/bin/crlMOPS: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlMaskImage2: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: 
+./crkit/bin/crlMeanFieldMRF 4dpdfInputImage classInteractionMatrixFile  convergenceTolerance mrfStrength maxIterationCount outputImageFile
+This is a work in progress.
+./crkit/bin/crlModifyIntensityAndSegmentationUsingNonDiffeomorphicMatching: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlModifySegmentationUsingNonDiffeomorphicMatching: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: ./crkit/bin/crlMultiEchoDicomToITK DicomDirectory outputFileName [outputFileName...]
+
+if, for instance, three output files are specified, then 
+it is assumed that this there are 3 echoes in the DICOM series 
+and they will be written out separately with the first echo 
+to the first file, etc.
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlMultipleMaskImage --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlMultipleOtsuMaskMaker --help
+
+Missing Parameters 
+Usage: ./crkit/bin/crlNonrigidBSplinePyramid fixedImageFile  movingImageFile outputImagefile NumberControlPoints MaxStepLength MinStepLength OutputFileTransform NbPyramidLevel numberOfBins numberOfMetricSamples nbIterations OutputFileDefField [ InitialScaleSkewVersor3DTransformFile ]
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlNonrigidBSplinePyramid2 --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlNormalizeImageFilter --help
+
+./crkit/bin/crlOrientImage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: 
+./crkit/bin/crlOverlapStats2d inputImageFile1 inputImageFile2  foregroundValue 
+Compute binary spatial overlap measures.
+Usage: 
+./crkit/bin/crlOverlapStats3d inputImageFile1 inputImageFile2  foregroundValue 
+Compute binary spatial overlap measures.
+Usage: 
+./crkit/bin/crlOverlapStats4d inputImageFile1 inputImageFile2  foregroundValue 
+Compute binary spatial overlap measures.
+./crkit/bin/crlPadImage: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlProbabilisticGMMSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlProbabilisticGMMVoting: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlProbabilisticSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlProbabilisticVectorGMMVoting: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlProbabilisticVoting: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlProbabilisticVotingForTissueSegmentation: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+usage: ./crkit/bin/crlProbeVoxel inimage dim1 [dim2..]
+Usage: ./crkit/bin/crlPutDICOMFilesInRightFolder DicomFile [tag]*
+./crkit/bin/crlRandomSegmentationImageGenerator: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Missing parameters. 
+Usage: 
+./crkit/bin/crlRelabelImages inputImageFile1 inputImageFile2  inputlabels outputlabels  outputImageFile ?nomatchoutputvalue?
+change the values of inputImage1 that match the inputlabels to the corresponding labels of outputlabels and use the values of inputImage2 when there are no matches in inputlabels UNLESS a default nomatch value is supplied in which case use that.
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlResampleToIsotropic --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlResampler --help
+
+./crkit/bin/crlResampler2: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlResampler2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlRigidMIExhaustiveSearchRegistration --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlRigidMIRegistration2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlRigidNormalizedCorrelationRegistration2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlRigidNormalizedMIRegistration2d --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlRigidRegistration --help
+
+./crkit/bin/crlSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlSVGMM: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlScalarResampler --help
+
+Usage: 
+./crkit/bin/crlScaleSkewVersor3DTransform outputTransformFile
+?optional y skew angle(gantry tilt, radians)?
+
+Write out a ScaleSkewVersor3DTransform transform.  Useful for in-place resampling of images to a new geometry.
+The serialization of the optimizable parameters is an array of 15 elements. The first 3 elements are the components of the versor representation of 3D rotation. The next 3 parameters defines the translation in each dimension. The next 3 parameters defines scaling in each dimension. The last 6 parameters defines the skew.
+Usage: 
+./crkit/bin/crlSetBoundary2d inputImageFile outputImageFile
+Usage: 
+./crkit/bin/crlShearTransform outputTransformFile dimensionality phi theta alpha
+
+Failed to write out a shear transform.
+Usage: 
+./crkit/bin/crlShrinkVectorImage inputImageFile   outputImageFile   start#   end#   addOnesToBegin#
+Parameters:  start# 	 the first component to copy (0...N-1)
+Parameters:  end# 	 the last component to copy (0...N-1)
+Parameters: addOnesToBegin# 	 number of components (all ones) to add.
+Usage: ./crkit/bin/crlSignedDanielssonDistanceMap2d inputImageFile outputDistanceMapImageFile  outputVoronoiMapImageFilter  outputVectorMapImageFilter 
+Usage: ./crkit/bin/crlSignedDanielssonDistanceMap3d inputImageFile outputDistanceMapImageFile  outputVoronoiMapImageFilter  outputVectorMapImageFilter 
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlSimilarityMIRegistration --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlSquarifyImage --help
+
+Usage: 
+./crkit/bin/crlSubsampleImage2d inputImageFile outputImageFile subsamplex subsampley ...
+Usage: 
+./crkit/bin/crlSubsampleImage3d inputImageFile outputImageFile subsamplex subsampley ...
+Usage: 
+./crkit/bin/crlSubsampleImage4d inputImageFile outputImageFile subsamplex subsampley ...
+./crkit/bin/crlTensorClean: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorExp: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorLog: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorResampler: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorScalarMultiply: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorScalarParameter: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorShapeMeasures: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorSum: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorToEigenvector: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTensorToRGB: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+Usage: ./crkit/bin/crlThresholdClipClamp inputImage outputImage  thresholdBelow thresholdAbove 
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlTissueVolumes --help
+
+./crkit/bin/crlTractGenerator: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+./crkit/bin/crlTractKnife: error while loading shared libraries: libvtkCommonDataModel-8.2.so.1: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlTransformDWIData --help
+
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlTransformMomentsInitialization --help
+
+usage: ./crkit/bin/crlTruthEditMapFile input-mapfile staple-truth.nrrd output-mapfile
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlUnSquarifyImage --help
+
+./crkit/bin/crlVector3ToRGB: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlVectorImageNorm --help
+
+Usage: 
+./crkit/bin/crlVectorMeanFieldMRF VectorPDFInputImage interactionExampleSegmentation|'auto'  convergenceTolerance mrfStrength maxIterationCount outputImageFile [numthreads]
+This is a work in progress.
+./crkit/bin/crlVectorProbabilisticSTAPLE: error while loading shared libraries: libITKNLOPTOptimizers.so: cannot open shared object file: No such file or directory
+PARSE ERROR:  
+             One or more required arguments missing!
+
+Brief USAGE: 
+
+For complete USAGE and HELP type: 
+   ./crkit/bin/crlVolumeToSlices --help
+
+usage: ./crkit/bin/crlWarpTrainingDataMapFile
+ in-mapfile deform-nrrd out-geometry out-mapfile [debug-output-geom-image]
+This has been re-written and now assumes that the deform file is from
+registering a target subject to the atlas subject. So, deform-nrrd
+is in the source (in-mapfile) space not the final (out-mapfile) space.
+For debugging purposes, the geometry image can be resampled to the space
+of the atlas subject if a final argument is specified as an output filename.
