@@ -5,11 +5,11 @@
 
 ## On other systems 
 
-Follow: https://docs.docker.com/engine/install/centos/
+Follow https://docs.docker.com/engine/install/centos/
 
 # 2. Start 
 
-Start docker on your machine 
+Start docker on your machine   
 
 `sudo systemctl start docker`
 
@@ -17,6 +17,6 @@ Note that you must have sudo access to your machine
 
 # 3. Verify 
 
-Run simple hello world 
+Run simple hello world   
 `sudo docker run hello-world`
 
