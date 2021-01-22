@@ -3,7 +3,7 @@
 
 ## Build:   
 ```
-name=sergeicu/crkit:2021`
+name=sergeicu/crkit:2021
 sudo docker build --no-cache -t $name .
 ```
 
