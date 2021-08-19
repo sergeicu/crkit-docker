@@ -61,6 +61,6 @@ To replicate:
 ```
 localfolder=/home/ch215616/code/docker/crkit/ 
 sudo docker run -it --rm -v $localfolder:/data $name
-find /crkit/bin/crl* -executable -type f -exec .{} \; > /data/stdout.log 2> /data/sterr.log
+find /crkit/bin/crl* -executable -type f -exec {} \; > /data/stdout.log 2> /data/sterr.log
 ```
 Then inspect `$localfolder/sterr.log` and search for "error while loading shared libraries"   
